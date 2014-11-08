@@ -1,4 +1,4 @@
 StackSmashing
 =============
 
-Buffer Overflow / Memory Curruption Lab
+Buffer Overflow / Memory Corruption Lab
