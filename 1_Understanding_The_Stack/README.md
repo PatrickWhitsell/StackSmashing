@@ -19,4 +19,13 @@ The program stack.c contains the functions main() and func1(). func1() accepts t
     $ gcc -fno-stack-protector stack.c -o stack.x -m32 -std=c99
     $ ./stack.x
 
-If you are familiar with C you may notice a few interesting things in the gcc command above. First, -fno-stack-protector disables the stacks 'canary' field. 
+If you are familiar with C you may notice a few interesting things in the gcc command above. First, -fno-stack-protector disables the stacks 'canary' field. The canary is between the return address and the local variables on the stack, and is checked at run time before executing the return instruction. If the canary has been tampared with, execution is immidiately haulted by the operating system. 
+
+Sample Stack Output From stack.c:
+
+    buffer1: 0xffffd154
+    buffer2: 0xffffd15c
+    a: 0xffffd190
+    b: 0xffffd194
+    c: 0xffffd198
+    ret addr: 0x8048528
