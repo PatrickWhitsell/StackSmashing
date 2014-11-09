@@ -2,7 +2,7 @@
 // $ gcc -S stack.c -o stack.s
 
 //For x86 32bit Assembly code
-// $ gcc -fno-stack-protector stack.c -o stack.x -m32 -std=c99
+// $ gcc --fno-stack-protector stack.c -o stack.x -m32 -std=c99
 // $ gdb stack.x
 // (gdb) disassemble func1
 
