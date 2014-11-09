@@ -7,7 +7,6 @@
 // (gdb) disassemble func1
 
 #include <stdio.h>
-#include <string.h>
 
 void func1(int a, int b, int c)
 {
