@@ -9,8 +9,4 @@ This is desgined to be a walkthrough to the basics of memory corruption by overf
 
 <b>Step 2: Exploiting The Stack</b>
 
-<b>Step 3: Find The Stack Vulnerability (Open Source)</b>
-
-<b>Step 4: Find The Stack Vulnerability (Closed Source)</b>
-
-<b>Step 5: Network Buffer Overflows</b>
+<b>In Progress...</b>
