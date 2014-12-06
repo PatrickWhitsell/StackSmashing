@@ -8,7 +8,7 @@ The Stack: Generally the stack is layed out with local variables at the lowest m
         lower memory addr                                   higher memory addr
         [------local variables------][--ret addr--][------function args------]
         top of stack                                           bottom of stack
-                                                           <----------- writes
+                                                           <----------- pushes
 
 The basic concept of a buffer overflow is that we write too much data to a local variable so that the write continues into the return address. We can then carfully modify the return address to execute arbitrary code on the system.
 
