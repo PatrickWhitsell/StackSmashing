@@ -5,10 +5,11 @@ The stack is a way for computer programs to store and organize data. Stacks are 
 
 The Stack: Generally the stack is layed out with local variables at the lowest memory addresses, the function arguments at the highest memory addressses, and the return address inbetween them. However, the top of the stack resides at higher addresses. The program writes data from the top to the bottom of the stack.
 
+                                                     <----------- stack pushes
         lower memory addr                                   higher memory addr
         [------local variables------][--ret addr--][------function args------]
         top of stack                                           bottom of stack
-                                                           <----------- pushes
+        buffer writes --------->                  
 
 The basic concept of a buffer overflow is that we write too much data to a local variable so that the write continues into the return address. We can then carfully modify the return address to execute arbitrary code on the system.
 
