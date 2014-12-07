@@ -13,4 +13,8 @@ This gives a basic overview of what a stack is and how it is set up by a program
 
 A walkthrough of a simple buffer overflow (1990s era exploit). Stack protections such as stack cookies, ASLR, and DEP are not compiled into the exploitable program in order to make it easier to exploit. 
 
+<b>Step 3: Return-Oriented Programming (ROP) </b>
+
+In this walkthrough we will bypass the common stack protections by using a technique originally named return-to-libc. 
+
 <b>In Progress...</b>
